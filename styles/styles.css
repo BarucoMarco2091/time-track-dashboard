@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+}
+
+main #grid-container {
+  display: grid;
+  grid-template-areas: "card-user card-work card-play card-study" "card-user card-exercise card-social card-care";
+}
+main #grid-container #card-user {
+  grid-area: card-user;
+}
+main #grid-container #card-work {
+  grid-area: card-work;
+}
+main #grid-container #card-play {
+  grid-area: card-play;
+}
+main #grid-container #card-study {
+  grid-area: card-study;
+}
+main #grid-container #card-exercise {
+  grid-area: card-exercise;
+}
+main #grid-container #card-social {
+  grid-area: card-social;
+}
+main #grid-container #card-care {
+  grid-area: card-care;
+}/*# sourceMappingURL=styles.css.map */
