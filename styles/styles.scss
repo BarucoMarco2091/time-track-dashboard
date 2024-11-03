@@ -18,37 +18,336 @@ $paleBlue: hsl(236, 100%, 87%);
     text-decoration: none;
 }
 
-body {
-    background-color: $veryDarkBlue;
-}
+
 
 main {
     #grid-container {
         display: grid;
-        grid-template-areas: 
-        'card-user card-work card-play card-study'
-        'card-user card-exercise card-social card-care';
+        grid-template-areas:
+            'card-user card-work card-play card-study'
+            'card-user card-exercise card-social card-care';
+        margin-top: 10dvh;
+        justify-content: center;
 
-        #card-user {
+        gap: 3dvh;
+
+        .card-user {
             grid-area: card-user;
+
+            .card-top {
+                background-color: $blue;
+                height: 50dvh;
+                width: 30dvh;
+                padding: 2dvh;
+                border-radius: 1.3dvh;
+                position: relative;
+                z-index: 3;
+
+                .paragraph-top {
+                    color: $paleBlue;
+                    font-family: 'Rubik', serif, arial;
+                    margin-top: 1dvh;
+                }
+
+                .title {
+                    color: white;
+                    font-family: 'Rubik', serif, arial;
+                    font-size: 1.8rem;
+                    margin-top: 5dvh;
+                }
+            }
+
+            .card-bottom {
+                background-color: $veryDarkBlue;
+                width: 30dvh;
+                height: 30dvh;
+                border-radius: 1.3dvh;
+                position: relative;
+                top: -3dvh;
+                display: flex;
+                flex-direction: column;
+
+                .btn {
+                    margin: 4dvh;
+                    border: none;
+                    background-color: $veryDarkBlue;
+                    cursor: pointer;
+                    font-family: 'Rubik', serif, arial;
+                    color: $paleBlue;
+                }
+
+                .btn:hover {
+                    color: white;
+                }
+            }
         }
-        #card-work {
+
+        .card-work {
             grid-area: card-work;
+            width: 40dvh;
+
+            .card-img {
+                background-color: $lightRedWork;
+                border-radius: 1.3dvh;
+
+                .work-img {
+                    position: relative;
+                    left: 32dvh;
+                }
+            }
+
+            .card-content {
+                background-color: $veryDarkBlue;
+                height: 25dvh;
+                position: relative;
+                top: -2dvh;
+                border-radius: 1.3dvh;
+            }
+
+            .work {
+                color: white;
+                padding-top: 3dvh;
+                margin-left: 2dvh;
+                font-family: 'Rubik', serif, arial;
+            }
+
+            .hours {
+                color: white;
+                font-family: 'Rubik', serif, arial;
+                font-size: 2.5rem;
+                padding-top: 3dvh;
+                margin-left: 2dvh;
+            }
+
+            .time {
+                color: $paleBlue;
+                font-family: 'Rubik', serif, arial;
+                padding-top: 3dvh;
+                margin-left: 2dvh;
+            }
         }
-        #card-play {
+
+        .card-play {
             grid-area: card-play;
+            width: 40dvh;
+
+            .card-img {
+                background-color: $softBluePlay;
+                border-radius: 1.3dvh;
+
+                .play-img {
+                    position: relative;
+                    left: 32dvh;
+                }
+            }
+
+            .card-content {
+                background-color: $veryDarkBlue;
+                height: 25dvh;
+                position: relative;
+                top: -2dvh;
+                border-radius: 1.3dvh;
+
+                .play {
+                    color: white;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                    font-family: 'Rubik', serif, arial;
+                }
+
+                .hours {
+                    color: white;
+                    font-family: 'Rubik', serif, arial;
+                    font-size: 2.5rem;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+
+                .time {
+                    color: $paleBlue;
+                    font-family: 'Rubik', serif, arial;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+            }
         }
-        #card-study {
+
+        .card-study {
             grid-area: card-study;
+            width: 40dvh;
+
+            .card-img {
+                background-color: $lightRedStudy;
+                border-radius: 1.3dvh;
+
+                .study-img {
+                    position: relative;
+                    left: 32dvh;
+                }
+            }
+
+            .card-content {
+                background-color: $veryDarkBlue;
+                height: 25dvh;
+                position: relative;
+                top: -2dvh;
+                border-radius: 1.3dvh;
+
+                .study {
+                    color: white;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                    font-family: 'Rubik', serif, arial;
+                }
+
+                .hours {
+                    color: white;
+                    font-family: 'Rubik', serif, arial;
+                    font-size: 2.5rem;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+
+                .time {
+                    color: $paleBlue;
+                    font-family: 'Rubik', serif, arial;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+            }
         }
-        #card-exercise {
+
+        .card-exercise {
             grid-area: card-exercise;
+
+            .card-img {
+                background-color: $limeGreenExercise;
+                border-radius: 1.3dvh;
+
+                .exercise-img {
+                    position: relative;
+                    left: 32dvh;
+                }
+            }
+
+            .card-content {
+                background-color: $veryDarkBlue;
+                height: 27dvh;
+                position: relative;
+                top: -2dvh;
+                border-radius: 1.3dvh;
+
+                .exercise {
+                    color: white;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                    font-family: 'Rubik', serif, arial;
+                }
+
+                .hours {
+                    color: white;
+                    font-family: 'Rubik', serif, arial;
+                    font-size: 2.5rem;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+
+                .time {
+                    color: $paleBlue;
+                    font-family: 'Rubik', serif, arial;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+            }
         }
-        #card-social {
+
+        .card-social {
             grid-area: card-social;
+
+            .card-img {
+                background-color: $violetSocial;
+                border-radius: 1.3dvh;
+
+                .social-img {
+                    position: relative;
+                    left: 32dvh;
+                }
+            }
+
+            .card-content {
+                background-color: $veryDarkBlue;
+                height: 25dvh;
+                position: relative;
+                top: -2dvh;
+                border-radius: 1.3dvh;
+
+                .social {
+                    color: white;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                    font-family: 'Rubik', serif, arial;
+                }
+
+                .hours {
+                    color: white;
+                    font-family: 'Rubik', serif, arial;
+                    font-size: 2.5rem;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+
+                .time {
+                    color: $paleBlue;
+                    font-family: 'Rubik', serif, arial;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+            }
         }
-        #card-care {
+
+        .card-care {
             grid-area: card-care;
+
+            .card-img {
+                background-color: $softOrangeSelfCare;
+                border-radius: 1.3dvh;
+
+                .care-img {
+                    position: relative;
+                    left: 32dvh;
+                }
+            }
+
+            .card-content {
+                background-color: $veryDarkBlue;
+                height: 25dvh;
+                position: relative;
+                top: -2dvh;
+                border-radius: 1.3dvh;
+
+                .self-care {
+                    color: white;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                    font-family: 'Rubik', serif, arial;
+                }
+
+                .hours {
+                    color: white;
+                    font-family: 'Rubik', serif, arial;
+                    font-size: 2.5rem;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+
+                .time {
+                    color: $paleBlue;
+                    font-family: 'Rubik', serif, arial;
+                    padding-top: 3dvh;
+                    margin-left: 2dvh;
+                }
+            }
+            
         }
     }
 }

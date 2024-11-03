@@ -12,54 +12,86 @@
     <header></header>
     <main>
         <div id="grid-container">
-            <div id="card-user">
+            <div class="card-user card-user-container">
                 <div class="card-top">
-                    <img src="assets/image-jeremy.png" alt="photo">
-                    <p>Report for</p>
-                    <h1>Jeremy<br>Robson</h1>
+                    <img class="photo" src="assets/image-jeremy.png" alt="photo" width="50%">
+                    <p class="paragraph-top">Report for</p>
+                    <p class="title">Jeremy<br>Robson</p>
                 </div>
-                <div class="bottom">
-                    <a href="#">Daily</a>
-                    <a href="#">Weekly</a>
-                    <a href="#">Monthly</a>
+                <div class="card-bottom">
+                    <button class="btn" onclick="daily()">
+                        Daily
+                    </button>
+                    <button class="btn-weekly" onclick="weekly()">
+                        Weekly
+                    </button>
+                    <button class="btn-monthly" onclick="monthly()">
+                        Monthly
+                    </button>
                 </div>
             </div>
-            <div id="card-work">
-                <img src="assets/icon-work.svg" alt="icon-work">
-                <span>Work</span>
-                <h2>32hrs</h2>
-                <p>Last Week - 36hrs</p>
-            </div>
-            <div id="card-play">
-                <img src="assets/icon-play.svg" alt="icon-play">
-                <span>Play</span>
-                <h2>10hrs</h2>
-                <p>Last Week - 8hrs</p>
-            </div>
-            <div id="card-study">
-                <img src="assets/icon-study.svg" alt="icon-study">
-                <span>Study</span>
-                <h2>4hrs</h2>
-                <p>Last Week - 7hrs</p>
-            </div>
-            <div id="card-exercise">
-                <img src="assets/icon-exercise.svg" alt="icon-exercise">
-                <span>Exercise</span>
-                <h2>4hrs</h2>
-                <p>Last Week - 5hrs</p>
-            </div>
-            <div id="card-social">
-                <img src="assets/icon-social.svg" alt="icon-social">
-                <span>Social</span>
-                <h2>5hrs</h2>
-                <p>Last Week - 10hrs</p>
-            </div>
-            <div id="card-care">
-                <img src="assets/icon-self-care.svg" alt="icon-self-care">
-                <span>Self Care</span>
-                <h2>2hrs</h2>
-                <p>Last Week - 2hrs</p>
-            </div>
+                <div class="card-work">
+                    <div class="card-img">
+                        <img class="work-img" src="assets/icon-work.svg" alt="icon-work" width="15%">
+                    </div>
+                    <div class="card-content">
+                        <p class="work">Work</p>
+                        <p class="hours">32hrs</p>
+                        <p class="time">Last Week - 36hrs</p>
+                    </div>
+                </div>
+                <div class="card-play">
+                    <div class="card-img">
+                        <img class="play-img" src="assets/icon-play.svg" alt="icon-play" width="15%">
+                    </div>
+                    <div class="card-content">
+                        <p class="play">Play</p>
+                        <p class="hours">10hrs</p>
+                        <p class="time">Last Week - 8hrs</p>
+                    </div>
+                </div>
+                <div class="card-study">
+                    <div class="card-img">
+                        <img class="study-img" src="assets/icon-study.svg" alt="icon-study" width="15%">
+                    </div>
+                    <div class="card-content">
+                        <p class="study">Study</p>
+                        <p class="hours">4hrs</p>
+                        <p class="time">Last Week - 7hrs</p>
+                    </div>
+                </div>
+                <div class="card-exercise">
+                    <div class="card-img">
+                        <img class="exercise-img" src="assets/icon-exercise.svg" alt="icon-exercise" width="20%">
+                    </div>
+                    <div class="card-content">
+                        <p class="exercise">Exercise</p>
+                        <p class="hours">4hrs</p>
+                        <p class="time">Last Week - 5hrs</p>
+                    </div>
+                </div>
+                <div class="card-social">
+                    <div class="card-img">
+                        <img class="social-img" src="assets/icon-social.svg" alt="icon-social" width="15%">
+                    </div>
+                    <div class="card-content">
+                        <p class="social">Social</p>
+                        <p class="hours">5hrs</p>
+                        <p class="time">Last Week - 10hrs</p>
+                    </div>
+                </div>
+                <div class="card-care">
+                    <div class="card-img">
+                        <img class="care-img" src="assets/icon-self-care.svg" alt="icon-self-care" width="15%">
+                    </div>
+                    <div class="card-content">
+                        <p class="self-care">Self Care</p>
+                        <p class="hours">2hrs</p>
+                        <p class="time">Last Week - 2hrs</p>
+                    </div>
+                </div>
+            
+
         </div>
     </main>
     <footer></footer>

@@ -6,32 +6,279 @@
   text-decoration: none;
 }
 
-body {
-  background-color: hsl(226, 43%, 10%);
-}
-
 main #grid-container {
   display: grid;
   grid-template-areas: "card-user card-work card-play card-study" "card-user card-exercise card-social card-care";
+  margin-top: 10dvh;
+  justify-content: center;
+  gap: 3dvh;
 }
-main #grid-container #card-user {
+main #grid-container .card-user {
   grid-area: card-user;
 }
-main #grid-container #card-work {
+main #grid-container .card-user .card-top {
+  background-color: hsl(246, 80%, 60%);
+  height: 50dvh;
+  width: 30dvh;
+  padding: 2dvh;
+  border-radius: 1.3dvh;
+  position: relative;
+  z-index: 3;
+}
+main #grid-container .card-user .card-top .paragraph-top {
+  color: hsl(236, 100%, 87%);
+  font-family: "Rubik", serif, arial;
+  margin-top: 1dvh;
+}
+main #grid-container .card-user .card-top .title {
+  color: white;
+  font-family: "Rubik", serif, arial;
+  font-size: 1.8rem;
+  margin-top: 5dvh;
+}
+main #grid-container .card-user .card-bottom {
+  background-color: hsl(226, 43%, 10%);
+  width: 30dvh;
+  height: 30dvh;
+  border-radius: 1.3dvh;
+  position: relative;
+  top: -3dvh;
+  display: flex;
+  flex-direction: column;
+}
+main #grid-container .card-user .card-bottom .btn {
+  margin: 4dvh;
+  border: none;
+  background-color: hsl(226, 43%, 10%);
+  cursor: pointer;
+  font-family: "Rubik", serif, arial;
+  color: hsl(236, 100%, 87%);
+}
+main #grid-container .card-user .card-bottom .btn:hover {
+  color: white;
+}
+main #grid-container .card-work {
   grid-area: card-work;
+  width: 40dvh;
 }
-main #grid-container #card-play {
+main #grid-container .card-work .card-img {
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-work .card-img .work-img {
+  position: relative;
+  left: 32dvh;
+}
+main #grid-container .card-work .card-content {
+  background-color: hsl(226, 43%, 10%);
+  height: 25dvh;
+  position: relative;
+  top: -2dvh;
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-work .work {
+  color: white;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+  font-family: "Rubik", serif, arial;
+}
+main #grid-container .card-work .hours {
+  color: white;
+  font-family: "Rubik", serif, arial;
+  font-size: 2.5rem;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-work .time {
+  color: hsl(236, 100%, 87%);
+  font-family: "Rubik", serif, arial;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-play {
   grid-area: card-play;
+  width: 40dvh;
 }
-main #grid-container #card-study {
+main #grid-container .card-play .card-img {
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-play .card-img .play-img {
+  position: relative;
+  left: 32dvh;
+}
+main #grid-container .card-play .card-content {
+  background-color: hsl(226, 43%, 10%);
+  height: 25dvh;
+  position: relative;
+  top: -2dvh;
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-play .card-content .play {
+  color: white;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+  font-family: "Rubik", serif, arial;
+}
+main #grid-container .card-play .card-content .hours {
+  color: white;
+  font-family: "Rubik", serif, arial;
+  font-size: 2.5rem;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-play .card-content .time {
+  color: hsl(236, 100%, 87%);
+  font-family: "Rubik", serif, arial;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-study {
   grid-area: card-study;
+  width: 40dvh;
 }
-main #grid-container #card-exercise {
+main #grid-container .card-study .card-img {
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-study .card-img .study-img {
+  position: relative;
+  left: 32dvh;
+}
+main #grid-container .card-study .card-content {
+  background-color: hsl(226, 43%, 10%);
+  height: 25dvh;
+  position: relative;
+  top: -2dvh;
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-study .card-content .study {
+  color: white;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+  font-family: "Rubik", serif, arial;
+}
+main #grid-container .card-study .card-content .hours {
+  color: white;
+  font-family: "Rubik", serif, arial;
+  font-size: 2.5rem;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-study .card-content .time {
+  color: hsl(236, 100%, 87%);
+  font-family: "Rubik", serif, arial;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-exercise {
   grid-area: card-exercise;
 }
-main #grid-container #card-social {
+main #grid-container .card-exercise .card-img {
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-exercise .card-img .exercise-img {
+  position: relative;
+  left: 32dvh;
+}
+main #grid-container .card-exercise .card-content {
+  background-color: hsl(226, 43%, 10%);
+  height: 27dvh;
+  position: relative;
+  top: -2dvh;
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-exercise .card-content .exercise {
+  color: white;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+  font-family: "Rubik", serif, arial;
+}
+main #grid-container .card-exercise .card-content .hours {
+  color: white;
+  font-family: "Rubik", serif, arial;
+  font-size: 2.5rem;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-exercise .card-content .time {
+  color: hsl(236, 100%, 87%);
+  font-family: "Rubik", serif, arial;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-social {
   grid-area: card-social;
 }
-main #grid-container #card-care {
+main #grid-container .card-social .card-img {
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-social .card-img .social-img {
+  position: relative;
+  left: 32dvh;
+}
+main #grid-container .card-social .card-content {
+  background-color: hsl(226, 43%, 10%);
+  height: 25dvh;
+  position: relative;
+  top: -2dvh;
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-social .card-content .social {
+  color: white;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+  font-family: "Rubik", serif, arial;
+}
+main #grid-container .card-social .card-content .hours {
+  color: white;
+  font-family: "Rubik", serif, arial;
+  font-size: 2.5rem;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-social .card-content .time {
+  color: hsl(236, 100%, 87%);
+  font-family: "Rubik", serif, arial;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-care {
   grid-area: card-care;
+}
+main #grid-container .card-care .card-img {
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-care .card-img .care-img {
+  position: relative;
+  left: 32dvh;
+}
+main #grid-container .card-care .card-content {
+  background-color: hsl(226, 43%, 10%);
+  height: 25dvh;
+  position: relative;
+  top: -2dvh;
+  border-radius: 1.3dvh;
+}
+main #grid-container .card-care .card-content .self-care {
+  color: white;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+  font-family: "Rubik", serif, arial;
+}
+main #grid-container .card-care .card-content .hours {
+  color: white;
+  font-family: "Rubik", serif, arial;
+  font-size: 2.5rem;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
+}
+main #grid-container .card-care .card-content .time {
+  color: hsl(236, 100%, 87%);
+  font-family: "Rubik", serif, arial;
+  padding-top: 3dvh;
+  margin-left: 2dvh;
 }/*# sourceMappingURL=styles.css.map */
